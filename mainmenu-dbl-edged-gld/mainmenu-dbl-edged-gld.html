@@ -1,0 +1,87 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>MAIN MENU</title>
+<link href="files/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="files/styles/style.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="files/respond.min.js"></script>
+<script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  
+<div data-role="page" id="dashboard" align="center">
+  <div id="header" data-role="header">
+    <h4>MAIN MENU</h4>
+  </div>
+  <div id="banner" align="left">
+  	<div>
+    	<img src="files/images/wild_design3.jpg" alt="bannerpg1">
+    </div>
+  </div>
+  
+  <div id="dashmenu" align="center">
+    <div id="dashmenu-left" data-role="controlgroup">
+    	<ul data-role="listview" data-inset="true" data-theme="e" >
+      		<li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>HELP & TIPS</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>ONLINE ADMISSIONS</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>E-PAYSLIP</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>BONUS</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>PRINTER</h2></a></li><h4></h4>
+        </ul>
+        </div>
+        
+        <div id="dashmenu-right" data-role="controlgroup">
+    	<ul data-role="listview" data-inset="true" data-theme="e">
+      		<li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>RESULTS & PLACEMENT</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>NATIONAL SERVICE</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>DV LOTTERY</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>MORE HERE</h2></a></li><p></p>
+            <li><a href="#page2"><img src="files/images/avarta2-whats.png" alt="dashmenu-img"><h2>EMPTY</h2></a></li><h4></h4>
+        </ul>
+        </div>        
+    </div>
+    
+ <!-- DialogBox -->
+ <div data-role="popup" id="popupDialog">
+ <h4><a>TEST APP 1.5</a></h4>
+ <h4>Developed By</h4>
+ <a><strong><h5>CASTERO-KUMASI</h5></strong></a>
+ 	<h6><a> ** AKA CODED **</a></h6>
+	<p>&copy; Copyright - 2016</p>
+</div>
+  <!-- Dialog End -->
+  
+  <div id="footer" data-role="footer" data-position="fixed" class="ui-bar">
+  <h4>&copy; 2016 - CASTERO - KUMASI ** AKA CODED **</h4>
+  <a href="#popupDialog" data-rel="popup" data-role="button" data-icon="info">About</a>
+  </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,385 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+@media screen and (orientation:landscape){
+
+#dashboard #banner div img {
+	position:relative;
+	top: 43px;
+	width:100%;
+}
+
+#dashmenu {
+	width:95% !important;
+	padding-top:7% !important;
+	z-index:1 !important;
+}
+}
+
+@media screen and (orientation:portrait){
+#dashboard #banner div img {
+	position: fixed;
+	top: 43px;
+	width:100%;
+	z-index:8;
+}
+
+#dashmenu {
+	width:95% !important;
+	padding-top:67% !important;
+	z-index:1 !important;
+}
+
+.ui-footer .ui-title{
+font-size:x-small !important;
+font-stretch:ultra-expanded !important;
+}
+}
+
+@media only screen and (min-width: 320px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#dashboard .ui-li-thumb, .ui-listview .ui-li-icon {
+max-width: 70px !important;
+max-height: 70px !important;
+}
+
+#dashboard .ui-li-heading {
+	font-size:11px !important;
+	overflow:visible !important;
+	font-weight:bold !important;
+	margin:.6em 0 !important;
+	text-overflow:ellipsis !important;
+	padding-top:12%;
+}
+
+#dashboard .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+min-height:59px !important;
+padding-left:69px !important;
+padding-bottom:0px !important;
+}
+
+.ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
+    padding-right: 0px !important;
+}
+
+.ui-li .ui-btn-text a.ui-link-inherit {
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+
+#dashmenu .ui-btn-icon-right .ui-icon {
+    right: 1px !important;
+	padding: 0px !important;
+	top:20% !important;
+}
+
+#dashmenu-left {
+	width: 49% !important;
+	height:auto !important;
+	float:left !important;
+}
+
+#dashmenu-right {
+	width: 49% !important;
+	height:auto !important;
+	float:right !important;
+}
+}
+
+@media only screen and (min-width: 350px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+#dashboard .ui-li-thumb, .ui-listview .ui-li-icon {
+max-width: 70px !important;
+max-height: 70px !important;
+}
+
+#dashboard .ui-li-heading {
+	font-size:14px !important;
+	overflow:visible !important;
+	font-weight:bold !important;
+	margin:.6em 0 !important;
+	text-overflow:ellipsis !important;
+	padding-top:3px;
+}
+
+#dashboard .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+min-height:59px !important;
+padding-left:69px !important;
+padding-bottom:0px !important;
+}
+
+#dashmenu .ui-btn-icon-right .ui-icon {
+    right: 1px !important;
+	padding: 0px !important;
+	top:20% !important;
+}
+
+#dashmenu-left {
+	width: 49% !important;
+	height:auto !important;
+	float:left !important;
+}
+
+#dashmenu-right {
+	width: 49% !important;
+	height:auto !important;
+	float:right !important;
+}
+
+}
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#dashboard .ui-li-heading {
+	font-size:18px !important;
+	overflow:visible !important;
+	font-weight:bold !important;
+	margin:.6em 0 !important;
+	text-overflow:ellipsis !important;
+	padding-top:0px;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#dashboard .ui-li-heading {
+	font-size:30px !important;
+	overflow:visible !important;
+	font-weight:bold !important;
+	margin:.6em 0 !important;
+	text-overflow:ellipsis !important;
+	padding-top:0px;
+}
+}
+
+
+body {
+	background:black;
+}
+
+/* dashboard settings */
+#dashboard {
+	background:black;
+}
+
+#dashboard #header {
+	text-align:center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:10;
+}
+
+#dashboard #footer {
+	text-align:center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#dashboard #footer h4{
+	right:2px;
+	position: fixed;
+	bottom: 5px;
+	width: 100%;
+}
+
+#dashboard .ui-footer > .ui-btn{
+	text-align:right !important;
+	left:35% !important;
+}
+
+#banner img {
+	/* border:groove #000 !important;
+	border-style:ridge !important;
+	border-radius:4px; */
+	
+	border-left:groove #000 !important;
+	border-left-style:inherit !important;
+	
+	border-right:groove #000 !important;
+	border-right-style:inherit !important;
+	
+	border-bottom:groove #000 !important;
+	border-bottom-style:ridge !important;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	
+	border-top:thick #000 !important;
+	border-top-style:solid;
+	box-shadow: 0 6px 8px 0 rgba(0,0,0,0.75),0 4px 8px 0 rgba(0,0,0,0.75) !important;
+}
+
+#dashboard div {
+	padding: 0px;
+}
+
+/* dashmenu */
+
+#dashboard .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+border:inset #FC0 1.99px !important;
+border-style:ridge !important;
+border-radius:4px;
+}
+
+#dashmenu img {
+	border:inset #FC0 1.99px !important; 
+	/* border:inset rgba(255, 255, 255, 250.65) !important; */
+	border-style:ridge !important;
+	border-radius:4px;
+	height:100% !important;
+}
+
+#dashmenu .ui-li .ui-btn-text {
+	/* padding: 0.7em 75px 0.7em 15px; */
+	padding:0px !important;
+	margin:0px !important;
+}
+
+#dashmenu .ui-li-has-thumb .ui-btn-inner {
+	padding: 0px !important;
+	margin:0px !important;
+}
+
+#dashmenu li h2{
+	text-align:center !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	white-space:normal !important;
+}
+
+#dashmenu p {
+	font-size:35px !important;
+}
+
+#dashmenu-left {
+	width: 48%;
+	height:auto !important;
+	float:left !important;
+}
+
+#dashmenu-right {
+	width: 48%;
+	height:auto !important;
+	float:right !important;
+}
+
+/* about dialog settings */
+.gridContainer.clearfix #LayoutDiv1 #dashboard #popupDialog {
+	border: medium rgba(253, 0, 152, 0.62) groove;
+}
+
+	#popupDialog h6 {
+	padding: 0px !important;
+	border: 0px !important;
+
+	margin: 0px !important;
+	top: 0px !important;
+}
+
+	#popupDialog h5 {
+	padding: 0px !important;
+	border: 0px !important;
+	margin: 0px !important;
+	/* color: rgba(0, 100, 255, 255) !important; */
+}
+
+	#popupDialog h6 a {
+	 color: rgba(5, 5, 5, 0.45) !important;
+}
